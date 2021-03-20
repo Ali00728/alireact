@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+.navbar a{
+    text-transform: uppercase;
+}
+.activeLink{
+    color: black;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+}
+// header
+.header{
+    height: 80vh;
+    .brandName{
+        color: #465594;
+    }
+    .himg{
+        animation: updown 2s ease-in-out infinite alternate-reverse both;
+    }
+    @keyframes updown {
+        0%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(-10px);
+        }
+    }
+}
+.btnStyle{
+    padding: 5px 20px;
+    border : 1px solid #465594;
+    border-radius: 50px;
+    color: #465594;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover{
+        background-color: #465594;
+        transition: 0.3s;
+        color: white;
+        cursor: pointer;
+    }
+}
+// about
+.about{
+    height: 80vh;
+    .myname{
+        color: #465594;
+    }
+    .contactbtn{
+        @extend .btnStyle;
+       display: inline-block;
+       margin-top: 15px;
+    }
+.picdiv{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+.mypic{
+    width: 300px;
+}
+
+}
+// services
+.card-img-top {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+.service{
+    text-align: center;
+    color: #465594;
+    text-transform:uppercase;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
